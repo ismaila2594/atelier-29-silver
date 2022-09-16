@@ -133,45 +133,39 @@
 
   <main>
 
-    <div class="container mt-5 mb-5 d-flex justify-content-center">
-      <div class="px-1 py-4">
-        <div class="card-body">
-          <h1 class="title mb-3">Contactez nous</h1>
+    <div class="container">
+      <div class="row">
+          <div class="col-12 bg-light">
+              <h1 class="bg-light p-4 text-black">Contact</h1>
+          </div>
+          <div class="col-sm-6 mx-auto mt-3">
 
-
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="form-group">
-                <input class="form-control" type="text" placeholder="Nom">
-              </div>
-            </div>
+              <form method="post" action="formulaire2_affichage.php" enctype="multipart/form-data" class="border p-3">
+                  <div class="mb-3">
+                      <label for="destinataire" class="form-label">Destinataire</label>
+                      <input type="text" class="form-control" id="destinataire" name="destinataire">
+                  </div>
+                  <div class="mb-3">
+                      <label for="expediteur" class="form-label">Expediteur</label>
+                      <input type="email" class="form-control" id="expediteur" name="expediteur">
+                  </div>
+                  <div class="mb-3">
+                      <label for="sujet" class="form-label">Sujet</label>
+                      <input type="text" class="form-control" id="sujet" name="sujet">
+                  </div>
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea type="text" class="form-control" id="message" name="message"></textarea>
+                  </div>
+                  <div class="mb-3">
+                      <hr>
+                      <button type="submit" class="btn btn-dark w-100" value="Valider"> <i class="fa-regular "> Nous contactez </i></button>
+                  </div>
+              </form>
           </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="form-group">
-                <input class="form-control" type="text" placeholder="Prenom">
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="form-group">
-                <div class="input-group"> <input class="form-control" type="text" placeholder="Email ID"> </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="form-group">
-                <div class="input-group message"> <input class="form-control" type="message" placeholder="message">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <button class="btn btn-dark btn-block confirm-button">Confirmez</button>
       </div>
-    </div>
+  </div>
+
     
 
   </main>
